@@ -1,0 +1,36 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.wrapper aside,
+.wrapper section {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper aside {
+  background-image: url("../../assets/login/panel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper section {
+  background-image: url("../../assets/login/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.wrapper section > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 310px;
+}
+
+.wrapper section form {
+  display: flex;
+  flex-direction: column;
+}
