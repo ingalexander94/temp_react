@@ -1,2 +1,10 @@
+export { default as Cities } from "./cities/Cities";
+export { default as Coupons } from "./coupons/Coupons";
 export { default as Dashboard } from "./dashboard/Dashboard";
 export { default as Login } from "./login/Login";
+export { default as Notifications } from "./notifications/Notifications";
+export { default as Photographers } from "./photographers/Photographers";
+export { default as Photoshoots } from "./photoshoots/Photoshoots";
+export { default as Plans } from "./plans/Plans";
+export { default as Promotions } from "./promotions/Promotions";
+export { default as Users } from "./users/Users";

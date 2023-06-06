@@ -1,5 +1,15 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Dashboard } from "@/pages";
+import {
+  Dashboard,
+  Users,
+  Photographers,
+  Photoshoots,
+  Cities,
+  Notifications,
+  Promotions,
+  Coupons,
+  Plans,
+} from "@/pages";
 
 export const DashboardRouter = () => {
   return (
@@ -17,14 +27,14 @@ export const DashboardRouter = () => {
               </Routes>
             }
           />
-          <Route path="/usuarios" element={<Dashboard />} />
-          <Route path="/fotografos" element={<Dashboard />} />
-          <Route path="/sesiones" element={<Dashboard />} />
-          <Route path="/ciudades" element={<Dashboard />} />
-          <Route path="/notificaciones" element={<Dashboard />} />
-          <Route path="/promociones" element={<Dashboard />} />
-          <Route path="/cupones" element={<Dashboard />} />
-          <Route path="/planes" element={<Dashboard />} />
+          <Route path="/usuarios" element={<Users />} />
+          <Route path="/fotografos" element={<Photographers />} />
+          <Route path="/sesiones" element={<Photoshoots />} />
+          <Route path="/ciudades" element={<Cities />} />
+          <Route path="/notificaciones" element={<Notifications />} />
+          <Route path="/promociones" element={<Promotions />} />
+          <Route path="/cupones" element={<Coupons />} />
+          <Route path="/planes" element={<Plans />} />
           <Route path="/*" element={<Navigate to="/404" replace />} />
         </Routes>
       </div>
